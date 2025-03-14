@@ -13,6 +13,9 @@
 		CE8A7B402D81FAD5002FF5DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8A7B3E2D81FAD5002FF5DA /* Main.storyboard */; };
 		CE8A7B422D81FADA002FF5DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8A7B412D81FADA002FF5DA /* Assets.xcassets */; };
 		CE8A7B452D81FADA002FF5DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8A7B432D81FADA002FF5DA /* LaunchScreen.storyboard */; };
+		CE8A7B6A2D84523C002FF5DA /* UITableViewSell+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A7B692D84523C002FF5DA /* UITableViewSell+Ext.swift */; };
+		CE8A7B6D2D845AE6002FF5DA /* HeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A7B6B2D845AE6002FF5DA /* HeaderViewCell.swift */; };
+		CE8A7B6E2D845AE6002FF5DA /* HeaderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8A7B6C2D845AE6002FF5DA /* HeaderViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		CE8A7B412D81FADA002FF5DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE8A7B442D81FADA002FF5DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE8A7B462D81FADA002FF5DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE8A7B692D84523C002FF5DA /* UITableViewSell+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewSell+Ext.swift"; sourceTree = "<group>"; };
+		CE8A7B6B2D845AE6002FF5DA /* HeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewCell.swift; sourceTree = "<group>"; };
+		CE8A7B6C2D845AE6002FF5DA /* HeaderViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +46,8 @@
 		CE8A7B2C2D81FAD5002FF5DA = {
 			isa = PBXGroup;
 			children = (
+				CE8A7B682D845213002FF5DA /* Ext */,
+				CE8A7B512D84496D002FF5DA /* headerCell */,
 				CE8A7B372D81FAD5002FF5DA /* AyYemekDashboardWithXib */,
 				CE8A7B362D81FAD5002FF5DA /* Products */,
 			);
@@ -65,6 +73,23 @@
 				CE8A7B462D81FADA002FF5DA /* Info.plist */,
 			);
 			path = AyYemekDashboardWithXib;
+			sourceTree = "<group>";
+		};
+		CE8A7B512D84496D002FF5DA /* headerCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE8A7B6B2D845AE6002FF5DA /* HeaderViewCell.swift */,
+				CE8A7B6C2D845AE6002FF5DA /* HeaderViewCell.xib */,
+			);
+			path = headerCell;
+			sourceTree = "<group>";
+		};
+		CE8A7B682D845213002FF5DA /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				CE8A7B692D84523C002FF5DA /* UITableViewSell+Ext.swift */,
+			);
+			path = Ext;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +153,7 @@
 				CE8A7B452D81FADA002FF5DA /* LaunchScreen.storyboard in Resources */,
 				CE8A7B422D81FADA002FF5DA /* Assets.xcassets in Resources */,
 				CE8A7B402D81FAD5002FF5DA /* Main.storyboard in Resources */,
+				CE8A7B6E2D845AE6002FF5DA /* HeaderViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +165,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE8A7B3D2D81FAD5002FF5DA /* ViewController.swift in Sources */,
+				CE8A7B6A2D84523C002FF5DA /* UITableViewSell+Ext.swift in Sources */,
+				CE8A7B6D2D845AE6002FF5DA /* HeaderViewCell.swift in Sources */,
 				CE8A7B392D81FAD5002FF5DA /* AppDelegate.swift in Sources */,
 				CE8A7B3B2D81FAD5002FF5DA /* SceneDelegate.swift in Sources */,
 			);
