@@ -1,21 +1,84 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="BannerTableViewCell" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="254" id="KGk-i7-Jjw" customClass="BannerTableViewCell" customModule="AyYemekDashboardWithXib" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="254"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="254"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PgU-DZ-uJ5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="254"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MsQ-xR-8IH">
+                                <rect key="frame" x="20" y="12" width="335" height="230"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="U2W-fd-d9A">
+                                        <rect key="frame" x="0.0" y="77.666666666666657" width="183" height="74.666666666666657"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4s-EC-lCb">
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uwz-He-pCm">
+                                                <rect key="frame" x="0.0" y="40.333333333333329" width="183" height="34.333333333333329"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Şifariş et"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BN8-dW-gUc">
+                                        <rect key="frame" x="203" y="49" width="132" height="132"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="132" id="TBN-GE-T1X"/>
+                                            <constraint firstAttribute="height" constant="132" id="vOk-XE-hka"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="bannerBg"/>
+                        <constraints>
+                            <constraint firstItem="MsQ-xR-8IH" firstAttribute="top" secondItem="PgU-DZ-uJ5" secondAttribute="top" constant="12" id="7Nq-Nj-8Kc"/>
+                            <constraint firstItem="MsQ-xR-8IH" firstAttribute="leading" secondItem="PgU-DZ-uJ5" secondAttribute="leading" constant="20" id="KKU-XL-WrS"/>
+                            <constraint firstAttribute="trailing" secondItem="MsQ-xR-8IH" secondAttribute="trailing" constant="20" id="Uh3-Dz-WHx"/>
+                            <constraint firstAttribute="bottom" secondItem="MsQ-xR-8IH" secondAttribute="bottom" constant="12" id="k60-Wh-6h7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PgU-DZ-uJ5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2hc-Ed-8i4"/>
+                    <constraint firstAttribute="bottom" secondItem="PgU-DZ-uJ5" secondAttribute="bottom" id="ULI-jj-sPp"/>
+                    <constraint firstAttribute="trailing" secondItem="PgU-DZ-uJ5" secondAttribute="trailing" id="Vif-kp-OmP"/>
+                    <constraint firstItem="PgU-DZ-uJ5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zLi-eX-veC"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="Addbutton" destination="Uwz-He-pCm" id="gBv-e2-Rgj"/>
+                <outlet property="rigthImage" destination="BN8-dW-gUc" id="5Nt-iN-x5d"/>
+                <outlet property="titleLabel" destination="S4s-EC-lCb" id="N3z-R9-7ts"/>
+            </connections>
+            <point key="canvasLocation" x="158.01526717557252" y="94.366197183098592"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <namedColor name="bannerBg">
+            <color red="0.97647058823529409" green="0.50980392156862742" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
